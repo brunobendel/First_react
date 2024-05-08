@@ -1,0 +1,27 @@
+////Iniciar projeto React vite
+npm create vite@latest
+npm run dev
+
+
+////Iniciar repositorio github
+git init
+git add .
+git commit -m "first commit"
+git branch -M main   // esse renomeia a Branch atual
+git remote add origin git@github.com:brunobendel/React_estudos.git
+git push -u origin main
+
+
+///NVM
+Listar as versões disponíveis do Node.js:
+
+nvm ls-remote
+Como instalar
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+Instalar uma versão específica do Node.js:
+nvm install versao_desejada
+Usar uma versão específica do Node.js:
+nvm use versao_desejada
+nvm --version
+
+

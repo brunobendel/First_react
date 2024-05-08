@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    color: white;
+    background: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    gap: 5px;
+    display: grid;
+    grid-template-areas:
+        'header header header header'
+        'aside content content content';
+}
+
+.header {
+    background: #333;
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem 0;
+}
+
+.header img {
+    height: 2rem;
+}
+
+.aside {
+    grid-area: aside;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.content {
+    grid-area: content;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
