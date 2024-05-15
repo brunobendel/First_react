@@ -12,13 +12,15 @@ export function App() {
     <div className="container">
       <BrowserRouter>
         <Header />
-        <Aside />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Condicional" element={<Condicional />} />
-          <Route path="/modal" element={<Modal />} />
-          <Route path="/Tabela" element={<Tabela />} />
-        </Routes>
+        <div className="flex">
+          <Aside />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Condicional" element={<Condicional />} />
+            <Route path="/modal" element={<Modal />} />
+            <Route path="/Tabela" element={<Tabela />} />
+          </Routes>
+        </div>
       </BrowserRouter>
     </div>
   );
